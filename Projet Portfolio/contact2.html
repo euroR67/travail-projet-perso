@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="contact2.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#"><h1>{ <span>/</span> } Mansour.dev</h1></a>
+            <ul class="nav-links">
+                <a href="#"><li>Projet</li></a>
+                <a href="#"><li>A Propos</li></a>
+                <a href="#"><li>Blog</li></a>
+                <a href="#"><li class="active">Contact</li></a>
+            </ul>
+            <div class="hidden_hamburger">
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </nav>
+        <script src="app.js"></script>
+    </header>
+
+    <div class="top">
+        <div class="contact">
+            <div><img src="images/fleche_gauche.svg"></div>
+            <div class="slash"><div class="slash1"></div></div>
+            <div><h1>Contact</h1></div>
+            <div><img src="images/fleche_droite.svg"></div>
+        </div>
+        <div class="feel">
+            <div class="love">
+                <p>A propos de n'importe quoi vraiment, sent toi libre. J'aime la compagnie 😉</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="formulaire">
+        <form method="get" action="">
+            <input class="field" type="text" name="nom_prenom" placeholder="Nom et prénom *" size="100%">
+            <input class="field" type="email" name="email" placeholder="Votre Email *" size="100%">
+            <textarea name="message" id="message" cols="100%" rows="10" placeholder="Votre message *"></textarea>
+        </form>
+        <input class="btn_sub" type="submit" value="ENVOYER" data-wait="Veuillez patientez...">
+    </div>
+
+</body>
+</html>

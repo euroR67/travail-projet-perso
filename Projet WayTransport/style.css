@@ -1,0 +1,258 @@
+/* ===================================== RESET GLOBAL =====================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ================ NAVIGATION HEADER ==================*/
+
+header {
+    padding: 20px;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    border-bottom: 1px solid #8b89897c;
+}
+
+/* ================ LOGO WAYTRANSPORT ==================*/
+
+.logo {
+    font-size: 1.9em;
+    color: rgb(50, 50, 50);
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+.way {
+    font-style: italic;
+    color: #FF4600;
+}
+
+/* ================ LIENS DE NAVIGATION ==================*/
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li {
+    transition: all 0.3s ease-in-out;
+    color: black;
+    padding: 10px 15px;
+    border-left: 1px solid rgba(176, 175, 175, 0.503);
+}
+
+nav ul li:hover {
+    color: white;
+    background-color: #FF4600;
+    padding: 10px 15px;
+}
+
+nav ul .active {
+    background-color: #FF4600;
+    padding: 10px 15px;
+    color: white;
+}
+
+/* ================ BANNIERE DÉMÉNAGEMENT ==================*/
+
+.prensentation {
+    background-image: url(images/demenageur2.webp);
+    background-position: center;
+    background-size: cover;
+    padding: 150px 0px;
+}
+
+/* ================ VOTRE DÉMÉNAGEMENT NOTRE MÉTIER ==================*/
+
+.votre,
+.demenagement,
+.notre {
+    margin: auto;
+    background-color: rgb(224, 224, 224);
+    width: max-content;
+    padding: 3px 25px;
+    font-size: 90px;
+    color: rgb(49, 49, 49);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.notre {
+    background-color: #f95a21;
+    color: white;
+}
+
+/* ================ PARTIE QUALITE ==================*/
+
+.qualite {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qualite div {
+    height: 190px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    font-weight: 600;
+    user-select: none;
+}
+
+.qualite div:first-of-type {
+    background-color: white;
+}
+
+.qualite div:nth-of-type(2) {
+    background-color: rgb(231, 229, 229);
+}
+
+.qualite div:nth-of-type(3) {
+    background-color: rgb(201, 200, 200);
+}
+
+/*================ PARTIE REALISER UN DEVIS ===================*/
+
+.devis {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: rgb(242, 241, 240);
+}
+
+.devis h1 {
+    font-size: 2.4em;
+    font-weight: 600;
+}
+
+.devis p {
+    font-size: 1.4em;
+    text-align: center;
+    width: 60%;
+}
+
+.devis a {
+    background-color: #FF4600;
+    padding: 12px 30px;
+    border-radius: 50px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.devis a:hover {
+color: black;
+}
+
+.contactez-nous {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(70, 69, 69);
+    gap: 30px;
+}
+
+.contactez-nous h1 {
+    font-size: 2.4em;
+    font-weight: 600;
+    color: white;
+}
+
+.contactez-nous a {
+    background-color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease-in-out;
+}
+
+.contactez-nous a:hover {
+    color:#FF4600
+}
+
+/* ================ FOOTER =============== */
+
+footer {
+    background-color: #141414;
+    color: rgb(225, 221, 221);
+    font-family: 'Poppins', sans-serif;
+    padding-top: 50px;
+    font-size: 14px;
+}
+
+.waytransport-footer .way-footer {
+    color: #f95a21;
+    font-style: italic;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.waytransport-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px;
+}
+
+.waytransport-footer a {
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.info-footer {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    padding: 20px;
+}
+
+.line {
+    border-bottom: 0.5px solid white;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.line h3 {
+    margin-bottom: 30px;
+}
+
+.nos-services li,
+.horaires p,
+.contact-footer p {
+    margin: 5px;
+}

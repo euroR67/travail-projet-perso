@@ -1,0 +1,265 @@
+@font-face {
+    font-family: 'acherusgrotesque-regular';
+    src: url('polices/acherusgrotesque-regular-webfont.woff2') format('woff2'),
+        url('polices/acherusgrotesque-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vastine-Regular';
+    src: url(polices/Vastine-Regular.otf);
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'acherusgrotesque-regular', sans-serif;
+}
+
+img {
+    pointer-events: none;
+}
+
+body {
+    display: flex;
+}
+body main {
+    width: 100%;
+    flex: 1 1;
+}
+
+/* ---------------------Barre de navigation a gauche--------------------- */
+.fixed {
+    position: sticky;
+    top: 0;
+}
+.sidebar {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 0px 10px rgb(181, 179, 179);
+    background-color: white;
+    z-index: 1;
+}
+
+.sidebar nav {
+    margin-top: 70%;
+}
+
+.sidebar img {
+    height: 122px;
+    width: 190px;
+}
+
+.logo_acura {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.navbar ul a {
+    font-size: 18px;
+    line-height: 55px;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    padding-bottom: 17px;
+}
+
+.navbar ul {
+    text-align: end;
+    margin: 10px 20px;
+    width: 100%;
+}
+
+.navbar ul li {
+    border-bottom: 3px solid rgba(212, 209, 209, 0.321);
+    margin-bottom: 10px;
+    list-style: none;
+    white-space: nowrap;
+}
+
+.navbar ul li:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #a50808;
+    transform: scaleX(0);
+    transition: .5s ease, .5s ease;
+    transform-origin: 100% 50%;
+}
+
+.navbar ul li:hover:after {
+    transform: scaleX(1);
+}
+
+/* ---------------------Section Acura Series--------------------- */
+
+.acura_series {
+    background-image: url(images/acura_series.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 38em;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.type_s {
+    width: auto;
+    align-items: center;
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 70px;
+    line-height: 78px;
+    font-family: 'Red Hat Display', sans-serif;
+    height: 300px;
+    font-weight: 600;
+}
+
+/* ---------------------Section Voyage de CHIAKI---------------------*/
+
+
+#headerPopup,
+#headerPopup2,
+#headerPopup3,
+#headerPopup4 {
+    width: 75%;
+    margin: 0 auto;
+}
+
+#headerPopup iframe #headerPopup2 iframe,
+#headerPopup3 iframe,
+#headerPopup4 iframe {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container_voyage {
+    display: flex;
+}
+
+.le_voyage_de_chiaki {
+    text-align: center;
+    width: 70em;
+    margin: auto;
+    padding: 5em;
+}
+
+.le_voyage_de_chiaki p {
+    color: rgb(87, 86, 86);
+    line-height: 1.5em;
+}
+
+.paragraphe_voyage1 {
+    margin-bottom: 2em;
+}
+
+.titre_voyage {
+    margin-bottom: 0.6em;
+    font-size: 2.5em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+}
+
+.volume1_2,
+.volume3_4{
+    display: flex;
+    justify-content: center;
+}
+
+main img {
+    width:100%;
+}
+.volume1,
+.volume2,
+.volume3,
+.volume4 {
+    width: 600px;
+    text-align: center;
+    margin-right: 10em;
+    margin: 2em;
+    display: inline-block;
+}
+
+.volume1_2 p,
+.volume3_4 p {
+    margin: 30px;
+    font-size: 0.9em;
+    color: rgb(81, 81, 81);
+    letter-spacing: 1px;
+    line-height: 1.5em;
+}
+
+.volume1_2 h2,
+.volume3_4 h2 {
+    margin: 1em;
+    font-size: 1.9em;
+}
+
+.watch {
+    background-color: #b90808;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 80px;
+    text-transform: uppercase;
+    font-weight: 800;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.watch:hover {
+    background-color: #740303;
+}
+
+/* ---------------------Section Tradition--------------------- */
+
+.tradition {
+    background-color: #a50808;
+    width: 100%;
+    height: auto;
+    padding: 3em;
+    color: white;
+    text-align: center;
+}
+
+.p_tradition {
+    height: auto;
+    width: 600px;
+    margin: auto;
+    font-size: 16px;
+}
+
+.tradition h1 {
+    margin-bottom: 0.8em;
+}
+
+/* ---------------------Section performance--------------------- */
+
+.performance {
+    width: auto;
+    height: auto;
+    padding: 3em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.p_performance {
+    height: auto;
+    width: 600px;
+    margin: auto;
+    font-size: 16px;
+}
+
+.performance h3 {
+    margin-top: 0.4em;
+    margin-bottom: 0.8em;
+}

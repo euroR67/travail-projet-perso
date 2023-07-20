@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background-color: rgb(55, 54, 54);
+}
+
+main {
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(20, 20, 60);
+    margin-top: 250px;
+    height: 600px;
+    background-color: rgb(228, 227, 227);
+}
+
+main .score {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 800px;
+    margin: 50px;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.human-score,
+.computer-score {
+    border: 1px solid rgba(66, 66, 149, 0.38);
+    width: 130px;
+    height: 60px;
+    background-color: rgb(237, 235, 235);
+}
+/* DISPLAY */
+main .game-name {
+    margin-bottom: 50px;
+}
+
+main .hands {
+    display: flex;
+    width: max-content;
+    justify-content: space-between;
+}
+
+main .hands img {
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+}
+
+.buttons button {
+    border: 1px solid darkblue;
+    cursor: pointer;
+    padding: 12px 20px;
+    background-color: rgb(20, 20, 60);
+    color: white;
+    width: 120px;
+    margin: 20px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons button:active {
+    border: 1px solid darkblue;
+    padding: 11px 19px;
+}
+
+.buttons button:hover {
+    background-color: rgba(28, 28, 74, 0.786);
+}
+
+.show-on {
+    display: none;
+}
+
+.show-on.static-hand {
+    width: 100px;
+    height: 100px;
+}
+
+.show-on.static-hand.human {
+    margin-right: 150px;
+}
+
+.show-on.static-hand.computer {
+    margin-left: 150px;
+}

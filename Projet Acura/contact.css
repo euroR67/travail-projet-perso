@@ -1,0 +1,401 @@
+@font-face {
+    font-family: 'acherusgrotesque-regular';
+    src: url('polices/acherusgrotesque-regular-webfont.woff2') format('woff2'),
+         url('polices/acherusgrotesque-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vastine-Regular';
+    src: url('polices/Vastine-Regular.otf');
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+img {
+    pointer-events:none;
+}
+
+/* ------------------------- Menu de navigation + Logo ------------------------- */
+
+@media screen and (max-width: 1018px) {
+
+    .sidebar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .div_logo {
+        position: absolute;
+        left: 39%;
+        top: 8px;
+    }
+
+    .navbar {
+        position: relative;
+        padding: 2rem!important;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .sidebar ul li {
+        margin-left: 0px!important;
+        margin-right: 0px!important;
+    }
+
+    .menu-left, .menu-right {
+        width: auto!important;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .navbar .menu-left, .menu-right {
+        display: none !important;
+    }
+
+    .div_logo {
+        position: absolute;
+        top: 10px;
+        left: 34%;
+        margin: 0!important;
+    }
+
+    .logo_img {
+        height: 24px!important;
+    }
+    .acura_series {
+        background-image:linear-gradient(to top, rgba(0, 0, 0, 0.318), rgba(112, 110, 110, 0.029)), url(images/acura_series_mobile.png) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: center !important;
+        height: 26em !important;
+        width: 100% !important;
+        display: flex !important;
+        position: relative !important;
+        margin-bottom: 15px !important;
+    }
+    .type_s {
+        position: absolute !important;
+        bottom: 2% !important;
+        left: 5% !important;
+        color: white !important;
+        text-transform: uppercase !important;
+        letter-spacing: 5px !important;
+        font-size: 50px !important;
+        line-height: 68px !important;
+        font-weight: 800 !important;
+        letter-spacing: -0.05em !important;
+    }
+    .le_voyage_de_chiaki {
+        text-align: center !important;
+        margin: auto !important;
+        padding: 3px !important;
+        font-size: 14px !important;
+    }
+
+    .volume1_2,
+    .volume3_4{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .volume1,
+    .volume2,
+    .volume3,
+    .volume4 {
+        width: auto !important;
+        text-align: center !important;
+        margin: 1em !important;
+    }
+
+    .watch {
+        margin-top: 5px !important;
+    }
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.sidebar .navbar {
+    box-shadow: 0px 0px 5px rgb(181, 179, 179);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+header div {
+    width: auto;
+}
+
+/* ------------------------- Logo Acura ------------------------- */
+
+.div_logo {
+    width: auto;
+    margin: 10px;
+}
+
+.div_logo a{
+    padding: 4px 0px 10px 0px;
+}
+
+.logo_img {
+    height: 32px;
+    width: auto;
+    margin: 10px;
+}
+
+/* ------------------------- Fin Logo Acura ------------------------- */
+
+.menu-left , .menu-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    width: 25em;
+}
+
+.menu-right {
+    justify-content: end;
+}
+
+.menu-left {
+    justify-content: start;
+}
+
+.menu-left .config {
+    background-color:#a50808;
+    padding: 10px 25px;
+    color: white;
+}
+
+.sidebar ul{
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+
+.sidebar ul li {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 15px;
+    list-style: none;
+    letter-spacing: 1.5px;
+}
+
+.sidebar ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.navbar ul .hov:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #a50808;
+    transform: scaleX(0);
+    transition: .5s ease, .5s ease;
+}
+
+.navbar ul .hov:hover:after {
+    transform: scaleX(1);
+}
+
+/* ------------------------- Fin Menu de navigation + Logo ------------------------- */
+
+/* ---------------------Section Acura Series--------------------- */
+
+.acura_series {
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.318), rgba(112, 110, 110, 0.029)), url(images/acura_series.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 44em;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.type_s {
+    position: absolute;
+    bottom: 7%;
+    left: 26%;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 80px;
+    line-height: 88px;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+}
+
+/* ---------------------Section Voyage de CHIAKI---------------------*/
+
+
+#headerPopup,
+#headerPopup2,
+#headerPopup3,
+#headerPopup4 {
+    width: 75%;
+    margin: 0 auto;
+}
+
+#headerPopup iframe #headerPopup2 iframe,
+#headerPopup3 iframe,
+#headerPopup4 iframe {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container_voyage {
+    display: flex;
+}
+
+.le_voyage_de_chiaki {
+    text-align: center;
+    width: 70em;
+    margin: auto;
+    padding: 5em;
+}
+
+.le_voyage_de_chiaki p {
+    color: rgb(87, 86, 86);
+    line-height: 1.5em;
+}
+
+.paragraphe_voyage1 {
+    margin-bottom: 2em;
+}
+
+.titre_voyage {
+    margin-bottom: 0.6em;
+    font-size: 2.5em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+}
+
+.volume1_2,
+.volume3_4{
+    display: flex;
+    justify-content: center;
+}
+
+.volume3_4 {
+    margin-bottom: 50px !important;
+}
+
+main img {
+    width:100%;
+}
+.volume1,
+.volume2,
+.volume3,
+.volume4 {
+    width: 600px;
+    text-align: center;
+    margin-right: 10em;
+    margin: 2em;
+    display: inline-block;
+}
+
+.volume1_2 p,
+.volume3_4 p {
+    margin: 30px;
+    font-size: 0.9em;
+    color: rgb(81, 81, 81);
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    height: 63px;
+}
+
+.volume1_2 h2,
+.volume3_4 h2 {
+    margin: 1em;
+    font-size: 1.9em;
+}
+
+.watch {
+    background-color: #b90808;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 80px;
+    text-transform: uppercase;
+    font-weight: 800;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.watch:hover {
+    background-color: #740303;
+}
+
+/* */ 
+.decouvrir {
+    background-color: #b90808;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 80px;
+    text-transform: uppercase;
+    font-weight: 800;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    je veux le boutton avec un effet hover comme le boutton watch
+
+}
+
+.decouvrir:hover {
+    background-color: #740303;
+}
+/* ---------------------Section Tradition--------------------- */
+
+.tradition {
+    background-color: #a50808;
+    width: 100%;
+    height: auto;
+    padding: 3em;
+    color: white;
+    text-align: center;
+}
+
+.p_tradition {
+    height: auto;
+    width: 600px;
+    margin: auto;
+    font-size: 16px;
+}
+
+.tradition h1 {
+    margin-bottom: 0.8em;
+}
+
+/* ---------------------Section performance--------------------- */
+
+.performance {
+    width: auto;
+    height: auto;
+    padding: 3em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.p_performance {
+    height: auto;
+    width: 600px;
+    margin: auto;
+    font-size: 16px;
+}
+
+.performance h3 {
+    margin-top: 0.4em;
+    margin-bottom: 0.8em;
+}

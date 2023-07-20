@@ -1,0 +1,212 @@
+/* ===================================== RESET GLOBAL =====================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ================ NAVIGATION HEADER ==================*/
+
+header {
+    padding: 20px;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    border-bottom: 1px solid #8b89897c;
+}
+
+/* ================ LOGO WAYTRANSPORT ==================*/
+
+.logo {
+    font-size: 1.9em;
+    color: rgb(50, 50, 50);
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+.way {
+    font-style: italic;
+    color: #FF4600;
+}
+
+/* ================ LIENS DE NAVIGATION ==================*/
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li {
+    color: black;
+    padding: 10px 15px;
+    border-left: 1px solid rgba(176, 175, 175, 0.503);
+    transition: all 0.3s ease-in-out;
+    width: 110px;
+    text-align: center;
+}
+
+nav ul li:hover {
+    color: white;
+    background-color: #FF4600;
+    padding: 10px 15px;
+}
+
+nav ul .active {
+    background-color: #FF4600;
+    padding: 10px 15px;
+    color: white;
+}
+
+/*================== Nos Services - Banniere ===================*/
+
+main .banniere {
+    background-image: linear-gradient(to bottom, rgba(34, 33, 33, 0.679), rgba(37, 37, 37, 0.638)),url(images/asphalt.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-size: 3.3em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 55px;
+}
+
+/*================== Nos Services - 01-06 ===================*/
+
+main .services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    gap: 50px;
+    padding: 40px;
+}
+
+main .services h1 {
+    color: #FF4600;
+    font-size: 3.8em;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+main .services h2 {
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin: 10px;
+}
+
+main .number {
+    height: 150px;
+}
+
+/*================== Nos Services - CONTACTEZ-NOUS ===================*/
+
+main .besoin {
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    padding: 50px;
+}
+
+main .b_besoin {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+    margin: auto;
+}
+
+main .besoin h3 {
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+main .besoin a {
+    background-color: #FF4600;
+    padding: 12px 22px;
+    border-radius: 50px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+main .besoin a:hover {
+    color: black;
+}
+
+/*======================== FOOTER =========================*/
+
+footer {
+    background-color: #141414;
+    color: rgb(225, 221, 221);
+    font-family: 'Poppins', sans-serif;
+    padding-top: 50px;
+    font-size: 14px;
+}
+
+.waytransport-footer .way-footer {
+    color: #f95a21;
+    font-style: italic;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.waytransport-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px;
+}
+
+.waytransport-footer a {
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.info-footer {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    padding: 20px;
+}
+
+.line {
+    border-bottom: 0.5px solid white;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.line h3 {
+    margin-bottom: 30px;
+}
+
+.nos-services li,
+.horaires p,
+.contact-footer p {
+    margin: 5px;
+}

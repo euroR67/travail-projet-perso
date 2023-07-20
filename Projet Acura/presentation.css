@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'acherusgrotesque-regular';
+    src: url('polices/acherusgrotesque-regular-webfont.woff2') format('woff2'),
+         url('polices/acherusgrotesque-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vastine-Regular';
+    src: url(polices/Vastine-Regular.otf);
+}
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'acherusgrotesque-regular',sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+main {
+    width: 100%;
+    margin-left: 22.1em;
+}
+
+/* ---------------------Barre de navigation a gauche--------------------- */
+
+.sidebar {
+    z-index: 100;
+    height: 100vh;
+    min-width: 22em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 0px 10px rgb(181, 179, 179);
+    background-color:white;
+    position: fixed;
+}
+
+.sidebar .navbar {
+    margin-top: 70%;
+}
+
+.sidebar img {
+    height: 122px;
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.navbar {
+    padding: 0.5rem 1rem
+}
+.navbar ul a {
+    font-size: 18px;
+    line-height: 55px;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    padding-bottom: 17px;
+}
+.navbar ul {
+    text-align: end;
+    margin: 10px 20px;
+}
+.navbar ul li {
+    border-bottom: 3px solid rgba(212, 209, 209, 0.321);
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.navbar ul li:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #a50808;
+    transform: scaleX(0);
+    transition: .5s ease, .5s ease;
+    transform-origin:100% 50%;
+}
+
+.navbar ul li:hover:after {
+    transform: scaleX(1);
+}
+
+/* ---------------------Section Tradition--------------------- */
+
+.tradition {
+    background-color: #a50808;
+    width: 100%;
+    height: auto;
+    padding: 3em;
+    color: white;
+    text-align: center;
+}
+
+.p_tradition {
+    height: auto;
+    width: 600px;
+    margin: auto;
+    font-size: 16px;
+}
+
+.tradition h1 {
+    margin-bottom: 0.8em;
+}
+
+/* ---------------------Section performance--------------------- */
+
+.performance {
+    width: auto;
+    height: auto;
+    padding: 3em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.p_performance {
+    height: auto;
+    width: 600px;
+    margin: auto;
+    font-size: 16px;
+}
+
+.performance h3 {
+    margin-top: 0.4em;
+    margin-bottom: 0.8em;
+}

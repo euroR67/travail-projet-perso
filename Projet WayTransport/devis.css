@@ -1,0 +1,315 @@
+/* ===================================== RESET GLOBAL =====================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ================ NAVIGATION HEADER ==================*/
+
+header {
+    padding: 20px;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    border-bottom: 1px solid #8b89897c;
+}
+
+/* ================ LOGO WAYTRANSPORT ==================*/
+
+.logo {
+    font-size: 1.9em;
+    color: rgb(50, 50, 50);
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+.way {
+    font-style: italic;
+    color: #FF4600;
+}
+
+/* ================ LIENS DE NAVIGATION ==================*/
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li {
+    transition: all 0.3s ease-in-out;
+    color: black;
+    padding: 10px 15px;
+    border-left: 1px solid rgba(176, 175, 175, 0.503);
+    width: 110px;
+    text-align: center;
+}
+
+nav ul li:hover {
+    color: white;
+    background-color: #FF4600;
+    padding: 10px 15px;
+}
+
+nav ul .active {
+    background-color: #FF4600;
+    padding: 10px 15px;
+    color: white;
+}
+
+/* ================ MAIN ================= */
+
+main .banniere {
+    background-image: linear-gradient(to bottom, rgba(34, 33, 33, 0.679), rgba(37, 37, 37, 0.638)),url(images/asphalt.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-size: 3.3em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 55px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+main {
+    background-color: rgb(240, 239, 239);
+}
+
+main h1 {
+    text-align: center;
+}
+
+main h1 {
+    font-family: Arial;
+    padding: 50px;
+}
+
+/*================== ONGLET ===================*/
+
+article {
+    width: max-content;
+    margin: auto;
+    font-size: 0px;
+    margin-bottom: 15px;
+}
+
+article h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.btn-onglet > button {
+    border: none;
+    background-color:#888685;
+    padding: 15px;
+    width: 300px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-onglet .active {
+    background-color:#ff4400bd;
+    box-shadow: 5px 1px 10px 2px rgb(178, 177, 177);
+}
+
+.btn-onglet > button:hover {
+    background-color:#ff4400bd;
+    box-shadow: 5px 1px 10px 2px rgb(178, 177, 177);
+}
+
+/*=================== MEUBLES ==========*/
+
+.produit {
+    display: flex;
+    gap: 15px;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.produit img {
+    width: 45px;
+    height: auto;
+}
+
+.contenu { 
+    font-size: 16px;
+    background-color: white;
+    padding: 20px;
+    width: 1200px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.contenu .meuble {
+    border: 1px solid rgb(186, 185, 185);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 220px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.contenu .meuble img{
+    padding: 5px;
+}
+
+.contenu .meuble p{
+    margin: 0px 5px;
+}
+
+.contenu .meuble button {
+    background-color:#f86f3d;
+    border: none;
+    cursor: pointer;
+    padding: 3px 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.contenu .meuble button:active {
+    background-color: #cf5c31;
+}
+
+.contenu .meuble .plus-moin {
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.plus-moin .plus, .moin {
+    cursor: pointer;
+    background-color: #f15d26;
+    padding: 0px 10px;
+}
+
+.plus-moin p {
+    width: 23px;
+}
+
+/* =================== TOTAL ================== */
+
+section {
+    padding-bottom: 50px;
+}
+
+.selected-total {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    width: 1200px;
+    border-radius: 8px;
+    align-items: center;
+    margin: auto;
+}
+
+.selected {
+    padding: 15px;
+}
+
+.selected ul {
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.selected ul li{
+    list-style:disc;
+    margin: 10px;
+}
+.selected p {
+    font-size: 20px;
+}
+
+.total {
+    padding: 15px;
+    height: max-content;
+    font-size: 30px;
+    border-left: 2px solid rgb(229, 226, 226);
+}
+
+span {
+    color:#f95a21;
+}
+
+/* ================ FOOTER =============== */
+
+footer {
+    background-color: #141414;
+    color: rgb(225, 221, 221);
+    font-family: 'Poppins', sans-serif;
+    padding-top: 50px;
+    font-size: 14px;
+}
+
+.waytransport-footer .way-footer {
+    color: #f95a21;
+    font-style: italic;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.waytransport-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px;
+}
+
+.waytransport-footer a {
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.info-footer {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    padding: 20px;
+}
+
+.line {
+    border-bottom: 0.5px solid white;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.line h3 {
+    margin-bottom: 30px;
+}
+
+.nos-services li,
+.horaires p,
+.contact-footer p {
+    margin: 5px;
+}

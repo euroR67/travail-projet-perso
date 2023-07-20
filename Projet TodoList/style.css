@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgba(24, 24, 24, 0.775);
+}
+
+
+.container {
+    position: relative;
+    max-width: 480px;
+    width: 100%;
+    border-radius: 8px;
+    margin: 385px auto 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    background-color: #fff;
+}
+
+.container .input-field {
+    position: relative;
+    height: 64px;
+    width: 100%;
+}
+
+.input-field textarea {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 8px;
+    padding: 22px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all .8s ease;
+}
+
+.input-field textarea:hover {
+    border: 1px solid rgb(7, 28, 82);
+}
+
+.input-field textarea:focus {
+    border: 1px solid rgb(0, 72, 255);
+}
+
+.input-field textarea:focus ~ .uil.uil-notes {
+    color: rgb(57, 100, 209);
+}
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: rgb(84, 83, 83);
+}
+
+.input-field i:focus {
+    color: rgb(0, 72, 255);;
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.todoLists li {
+    background-color: rgb(238, 237, 237);
+    margin: 15px 0px;
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+}
+
+.list input:checked ~ .task {
+    text-decoration: line-through;
+}
+
+.list i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: rgb(84, 83, 83);
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.list i:hover {
+    opacity: 1;
+}
+
+.list input {
+    height: 16px;
+    width: 16px;
+    accent-color: rgb(42, 149, 230);
+    margin-right: 10px;
+    pointer-events: none;
+}
+
+.pending {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 13px;
+    margin-top: 10px;
+}
+
+.pending button {
+    border: none;
+    padding: 10px 15px;
+    border-radius:8px;
+    background-color: rgb(55, 121, 244);
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.pending button:hover {
+    background-color: rgba(55, 121, 244, 0.809);
+}
+
+.pending button:active {
+    transform: scale(0.96);
+}
+
+.pending-nums {
+    color: rgb(31, 108, 250);
+}

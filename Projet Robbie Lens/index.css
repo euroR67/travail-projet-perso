@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* NAVIGATION ET LOGO  */
+
+body {
+    background-color: #1f2039;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin: 15px;
+}
+
+.logo a img {
+    width: auto;
+    height: 35px;
+}
+
+.logo a img:hover, .social img:hover, .logo_footer:hover {
+    opacity: 0.6;
+}
+
+.navlinks {
+    display: flex;
+    margin: 10px 0 15px 0;
+}
+
+.navlinks a {
+    color: black;
+    margin: 0 10px;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+@media screen and (min-width:1000px ) {
+    header {
+        padding: 5px;
+    }
+    .navlinks {
+        margin: 0;
+    }
+
+    .logo {
+        margin-left: 40px;
+    }
+
+    .logo a img {
+        width: auto;
+        height: 45px;
+        margin-left: 40px;
+    }
+
+    .navlinks a {
+        margin: 0 20px;
+    }
+
+    .navlinks a:hover {
+        text-decoration: underline;
+    }
+}
+
+/* MAIN HEADER  */
+
+.main_header {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    margin: auto;
+    max-width: 1100px;
+}
+
+.presentation {
+    text-align: center;
+    line-height: 1.3em;
+    padding: 5px;
+}
+
+.robbie_photo {
+    padding: 10px;
+}
+
+.main_header h2 , span{
+    color: #a5b4fc;
+}
+
+.main_header h2 {
+    margin: 7px;
+    font-size: 18px;
+}
+
+.main_header h2::selection {
+    background-color: rgb(70, 53, 145);
+}
+
+button {
+    background: linear-gradient(#8e86b5, #acaeed);
+    border: none;
+    padding: 20px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: white;
+    margin: 20px;
+    cursor: pointer;
+}
+
+button:hover , .submit:hover {
+    background: linear-gradient(#777098, #989ad0);
+}
+
+button a{
+    color: white;
+}
+
+@media screen and (min-width:1000px ){
+    .robbie_photo {
+        width: 420px;
+        height: auto;
+        padding: 0;
+    }
+
+    .main_header {
+        flex-direction: row-reverse;
+        padding: 80px 70px;
+        justify-content: center;
+    }
+
+    .main_header h2 {
+        font-size: 3.5em;
+        line-height: 1.2em;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .presentation {
+        text-align: start;
+        margin-right: 50px;
+    }
+    
+    button {
+        margin: 20px 0;
+        font-size: 0.9em;
+    }
+
+    .presentation p {
+        font-size: 1.1em;
+        line-height: 1.3em;
+    }
+}
+
+/* IMAGES  */
+
+.main_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.main_main img {
+    width: 100%;
+    margin: 4px;
+}
+
+.main_main h3 {
+    font-size: 15px;
+    margin: 30px;
+    margin-top: 35px;
+}
+
+@media screen and (min-width:1000px ){
+    .main_main .photos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 70px;
+    }
+
+    .photos img {
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+
+    .main_main h3 {
+        font-size: 1.5em;
+        margin: 70px;
+    }
+}
+
+/* FORMULAIRE  */
+
+.formulaire {
+    background-color: #1f2039;
+    padding: 10px;
+}
+
+.formulaire form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border: none;
+}
+
+.nom_email {
+    display: flex;
+    flex-direction: column;
+}
+
+.nom {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.formulaire h3 {
+    text-align: center;
+    color:#a5b4fc;
+    font-size: 16px;
+    margin: 10px;
+}
+
+label {
+    font-size: 13px;
+}
+
+input {
+    margin: 10px 0px;
+}
+
+textarea {
+    margin: 10px 0px;
+}
+
+.submit {
+    background: linear-gradient(#8e86b5, #acaeed);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: white;
+    margin: auto;
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* FOOTER  */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: white;
+}
+
+footer a img {
+    width: auto;
+    height: 25px;
+}
+
+footer div img {
+    width: auto;
+    height: 15px;
+    margin: 5px;
+}
+
+.social  {
+    margin-top: 5px;
+}
+
+@media screen and (min-width:820px ){
+    form {
+        margin: 0px 100px;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width:1000px ) {
+    .nom_email {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        margin-bottom: 10px;
+    }
+
+    .nom {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .email {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .formulaire {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .formulaire form {
+        margin: 0px 50px;
+    }
+
+    form label{
+        font-size: 16px;
+    }
+
+    input , textarea{
+        padding: 15px;
+    }
+
+    .formulaire h3 {
+        font-size: 24px;
+        margin: 50px 0;
+    }
+
+    .formulaire .submit {
+        margin-bottom: 30px;
+        margin-top: 30px;
+        padding: 20px 35px;
+        width: 200px;
+    }
+
+    footer {
+        padding: 20px;
+        align-items: center;
+    }
+
+    .logo_footer {
+        width: auto;
+        height: 45px;
+    }
+
+    .social img{
+        width: auto;
+        height: 30px;
+    }
+}

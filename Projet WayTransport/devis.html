@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,800;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="devis.css">
+    <title>Index</title>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script id="templateHB" type="text/x-handlebars-template">
+
+        {{#each products}}
+        <div class="meuble"><img src="{{this.image}}">
+            <p>{{this.element}}</p>
+            <div class="plus-moin">
+                <button data-increase="{{@index}}">+</button>
+                <p data-quantity="{{@index}}">{{this.quantity}}</p>
+                <button data-decrease="{{@index}}">-</button>
+            </div>
+        </div>
+        {{/each}}
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">
+                <h1 class="logo"><span class="way">WAY</span>TRANSPORT</h1>
+            </a>
+            <ul>
+                <a href="index.html">
+                    <li>ACCUEIL</li>
+                </a>
+                <a href="services.html">
+                    <li>SERVICES</li>
+                </a>
+                <a href="devis.html">
+                    <li class="active">DEVIS</li>
+                </a>
+                <a href="#">
+                    <li>TARIFS</li>
+                </a>
+                <a href="contact.html">
+                    <li>CONTACT</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="banniere">
+            Réaliser un devis en ligne
+        </div>
+        <article>
+            <!-- LES BOUTTONS ONGLET -->
+            <div class="btn-onglet">
+                <button class="active" id="btn-salon">SALON</button>
+                <button id="btn-chambre">CHAMBRE</button>
+                <button id="btn-cuisine">CUISINE</button>
+                <button class="last" id="btn-bain">SALLE DE BAIN</button>
+            </div>
+
+            <!-- ONGLET POUR LES ELEMENT DU SALON -->
+            <div id="onglet-salon" class="contenu">
+                <h2>Seléctionnez vos meuble de salon</h2>
+                <div id="meuble-salon" class="produit">
+                </div>
+            </div>
+            <!-- ONGLET POUR LES ELEMENT DE CHAMBRE -->
+            <div id="onglet-chambre" class="contenu" style="display: none;">
+                <h2>Seléctionnez vos meuble de chambre</h2>
+                <div id="meuble-chambre" class="produit">
+                </div>
+            </div>
+            <!-- ONGLET POUR LES ELEMENT DE CUISINE -->
+            <div id="onglet-cuisine" class="contenu" style="display: none;">
+                <h2>Seléctionnez vos meuble de cuisine</h2>
+                <div id="meuble-cuisine" class="produit"></div>
+            </div>
+            <!-- ONGLET POUR LES ELEMENT DE SALLE DE BAIN -->
+            <div id="onglet-bain" class="contenu" style="display: none;">
+                <h2>Seléctionnez vos meuble de bain</h2>
+                <div id="meuble-bain" class="produit"></div>
+            </div>
+        </article>
+
+        <section>
+            <div class="selected-total">
+                <p>Produit seléctionnez :</p>
+                <div class="selected">
+                    <ul>
+                        <li>Lit double <span id="selectionne" class="nombre">0</span></li>
+                    </ul>
+                </div>
+                <div class="total">
+                    <p>Total m³ : <span id="volume-total">0</span></p>
+                    <p>Prix : <span id="prix-total">0 €</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="line">
+            <div class="info-footer">
+                <div class="nos-services">
+                    <h3>Nos services</h3>
+                    <ul>
+                        <li>- Déménagement</li>
+                        <li>- Transport de marchandise</li>
+                        <li>- Mains d'Œuvres</li>
+                        <li>- Location de véhicule avec chauffeur</li>
+                        <li>- Débarrassement encombrants</li>
+                    </ul>
+                </div>
+                <div class="horaires">
+                    <h3>Horaires d'ouverture</h3>
+                    <p>Lundi: 9:00 - 20:00</p>
+                    <p>Mardi: 9:00 - 20:00</p>
+                    <p>Mercredi: 9:00 - 12:00</p>
+                    <p>Jeudi: 9:00 - 20:00</p>
+                    <p>Vendredi: 9:00 - 20:00</p>
+                </div>
+                <div class="contact-footer">
+                    <h3>Contactez-nous</h3>
+                    <p>Rue frère lumières <br> 67200 Strasbourg</p>
+                    <p>Tel: +33 6 50 31 30 66 <br> mchamaev67@gmail.com</p>
+                </div>
+            </div>
+            <div class="waytransport-footer">
+                <a href="#top"><span class="way-footer">WAY</span>TRANSPORT</a>
+            </div>
+        </div>
+        <div class="copy">
+            <p>&copy; 2023 par WAYTRANSPORT. Tout droits réservé.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="handlebar.js"></script>
+</body>
+
+</html>

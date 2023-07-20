@@ -1,0 +1,297 @@
+@font-face {
+    font-family: 'ballpark';
+    src: url(polices/ballpark.eot);
+    src: url(polices/ballpark.svg);
+    src: url(polices/ballpark.ttf);
+    src: url(polices/ballpark.woff);
+}
+
+@font-face {
+    font-family: 'dayrom';
+    src: url(polices/dayrom.eot);
+    src: url(polices/dayrom.svg);
+    src: url(polices/dayrom.ttf);
+    src: url(polices/dayrom.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'dayrom';
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(images/fond_jaune.png);
+}
+
+.tm {
+    vertical-align:1.3em;
+    font-size: 8px;
+}
+
+/* -------------------------------DEBUT HEADER--------------------------------*/
+
+header {
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* DEBU BLOC LOGO */
+
+.logo_image {
+    display: flex;
+    justify-content: end;
+}
+
+.logo_image img {
+    margin: 0 10px 10px 0;
+}
+
+.bloc_logo {
+    margin: 15px 0 15px 0;
+}
+
+.bloc_logo h2 {
+    font-size: 20px;
+}
+
+.logo_image h1 {
+    display: flex;
+    align-items: flex-end;
+    font-family: 'ballpark';
+    font-size: 40px;
+    margin-bottom: -10px;
+}
+
+/* FIN BLOC LOGO */
+
+.separateur_top,
+.separateur_bottom {
+    width: 100%;
+    margin: auto;
+    height: 4px;
+    background-image: url(images/separateur.png);
+    position: relative;
+}
+
+/* DEBUT BLOC NAVIGATION */
+.topbar ul {
+    display: flex;
+    padding-top: 30px;
+}
+
+.topbar ul li{
+    margin: 0 0 0 20px;
+    text-transform: uppercase;
+}
+
+.topbar ul li a {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.topbar ul li a:hover {
+    color : brown;
+    border-bottom: 3px solid brown;
+}
+
+.topbar ul li a.active {
+    color : brown;
+    border-bottom: 3px solid brown;
+}
+
+/* FIN BLOC NAVIGATION */
+
+/* ------------------------------- FIN HEADER --------------------------------*/
+
+/* ------------------------------- DEBUT BANNIERE --------------------------------*/
+
+main {
+    width: 1100px;
+    margin: auto;
+    padding: 10px;
+}
+.banniere {
+    width: 100%;
+    background: no-repeat center center / cover url(images/sanfrancisco.jpg);
+    height: 280px;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.537);
+}
+
+.description_banniere {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.496);
+    color: white;
+    height: auto;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.description_banniere .button {
+    background: rgb(135,3,3);
+    background: linear-gradient(0deg, rgba(135,3,3,1) 0%, rgb(166, 137, 137) 100%);
+    padding: 5px 12px;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.description_banniere .button:hover {
+    background: rgb(96, 2, 2);
+    background: linear-gradient(0deg, rgb(95, 1, 1) 0%, rgb(166, 137, 137) 100%);
+}
+
+/* ------------------------------- FIN BANNIERE --------------------------------*/
+
+
+/* ------------------------------- DEBUT MAIN --------------------------------*/
+
+section {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+article {
+    width: 100%;
+}
+
+.voyageur {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.voyageur img {
+    margin-right: 10px;
+}
+
+article .text{
+    margin: 10px 25px 20px 0px;
+    text-align: justify;
+}
+
+/* DEBUT ASIDE */
+
+.aside {
+    height: 100%;
+    padding: 10px;
+    background-color: rgba(76, 75, 75, 0.765);
+    color: white;
+    font-size: 14px;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px grey;
+    position: relative;
+    width: 400px;
+}
+
+.aside h2 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.aside img {
+    border: 1px solid black;
+    margin: 10px 0;
+}
+
+.aside p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#bulle {
+    position: absolute;
+    left: -12px;
+    bottom: 250px;
+    border: none;
+}
+
+.social img {
+    border: none;
+}
+
+/* FIN ASIDE */
+
+/* ------------------------------- FIN MAIN --------------------------------*/
+
+/* ------------------------------- DEBUT FOOTER --------------------------------*/
+
+footer {
+    display: flex;
+    width: 1100px;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.list_amis {
+    display: flex;
+    color: rgb(188, 7, 7);
+}
+
+.amis2 {
+    margin-left: 200px;
+}
+
+.mes_amis ul li {
+    list-style-image: url(images/ico_liensexterne.png);
+}
+
+.tweet, .photos, .mes_amis {
+    margin-bottom: 20px;
+}
+
+footer h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.tweet p {
+    margin-bottom: 10px;
+}
+
+.photos img {
+    border: 1px solid black;
+}
+
+.separateur_bottom img {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+}
+
+/* ------------------------------- FIN FOOTER --------------------------------*/
+
+

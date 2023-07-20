@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+    <main>
+        <div class="score">
+            <div class="human-score">
+                <p>You</p>
+                <p id="human-score">0</p>
+            </div>
+            <div class="computer-score">
+                <p>Computer</p>
+                <p id="computer-score">0</p>
+            </div>
+        </div>
+        <h1 class="game-name show-off" id="title">Rock, Paper, Scissors</h1>
+        <h1 class="choose-option show-on" id="winner-looser">Choose an option</h1>
+        <div class="hands">
+            <img class="show-off" id="the-rock" src="images/rock.png" alt="rock">
+            <img class="show-off" id="the-paper" src="images/paper.png" alt="scissors">
+            <img class="show-off" id="the-scissors" src="images/scissors.png" alt="paper">
+            <img class="show-on static-hand human" src="images/rock-game.png" alt="rock">
+            <img class="show-on static-hand computer" src="images/rock-game.png" alt="paper">
+        </div>
+        <div class="buttons">
+            <button id="start-game" class="play show-off">Let's play!</button>
+            <button class="options show-on" id="rock" onclick="getMyChoice('rock')">Rock</button>
+            <button class="options show-on" id="paper" onclick="getMyChoice('paper')">Paper</button>
+            <button class="options show-on" id="scissors" onclick="getMyChoice('scissors')">Scissors</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
